@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5377ad39-2ce2-47f8-945f-98677cd7bac8" name="Changes" comment="initial commit">
+    <list default="true" id="5377ad39-2ce2-47f8-945f-98677cd7bac8" name="Changes" comment="java 기본구조">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,13 +43,13 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;
   }
 }</component>
-  <component name="RunManager" selected="애플리케이션.Casting">
-    <configuration name="Casting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day01.Casting" />
+  <component name="RunManager" selected="애플리케이션.ArrayPushQuiz">
+    <configuration name="ArrayCopy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day02.ArrayCopy" />
       <module name="java_basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day01.*" />
+          <option name="PATTERN" value="day02.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -57,12 +57,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DataType" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day01.DataType" />
+    <configuration name="ArrayPop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day02.ArrayPop" />
       <module name="java_basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day01.*" />
+          <option name="PATTERN" value="day02.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -70,18 +70,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Hello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Hello" />
+    <configuration name="ArrayPush" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day02.ArrayPush" />
       <module name="java_basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayPushQuiz" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day02.ArrayPushQuiz" />
+      <module name="java_basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StdIO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day02.StdIO" />
+      <module name="java_basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="애플리케이션.Casting" />
-        <item itemvalue="애플리케이션.DataType" />
-        <item itemvalue="애플리케이션.Hello" />
+        <item itemvalue="애플리케이션.ArrayPushQuiz" />
+        <item itemvalue="애플리케이션.StdIO" />
+        <item itemvalue="애플리케이션.ArrayPop" />
+        <item itemvalue="애플리케이션.ArrayPush" />
+        <item itemvalue="애플리케이션.ArrayCopy" />
       </list>
     </recent_temporary>
   </component>
@@ -108,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679881104122</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="java 기본구조">
+      <created>1679896176715</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679896176715</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,7 +165,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="java 기본구조" />
+    <option name="LAST_COMMIT_MESSAGE" value="java 기본구조" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
