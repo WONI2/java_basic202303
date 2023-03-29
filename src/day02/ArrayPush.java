@@ -27,12 +27,10 @@ import java.util.Arrays;
 //
 //
 //    public static void main(String[] args) {
-//        int[] arr = {10, 20, 30};
-//        int newData = 40; //40을 30 뒤에 넣으려고 함.
+//
 //        //새로운 데이터를 배열에 맨 끝에 추가
-////
-////
-////
+////        int[] arr = {10, 20, 30};
+////        int newData = 40; //40을 30 뒤에 넣으려고 함.
 ////
 ////        //1. 원본 배열보다 1개 사이즈가 더 큰 새 배열 생성
 ////        int[] temp = new int[arr.length+1];

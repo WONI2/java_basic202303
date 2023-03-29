@@ -43,24 +43,27 @@ public class ArrayPushQuiz {
 
         System.out.println("먹고싶은 음식을 입력하세요. \n입력을 중지하려면 <그만>이라고 입력하세요");
         Scanner sc = new Scanner(System.in);
-
+        String food = sc.nextLine();
+        //밖에서 하면 왜 안끝나지?????? while이 없으면 끝남.
+         push(food);
+        System.out.println("먹고싶은 음식리스트 : " + Arrays.toString(foodList));
 
         while (true){
 
-        String food = sc.nextLine();
-        //밖에서 하면 왜 안끝나지??????
 
-        System.out.println(food);
 
-            if(food.equals("그만")) {
-                break;
-            } else {
-                push(food);
 
-            }
+        //System.out.println(food);
+//
+//            if(food.equals("그만")) {
+//               // break;
+//            } else {
+//
+//
+//            }
 
         }
-        System.out.println("먹고싶은 음식리스트 : " + Arrays.toString(foodList));
+
 
 
     }
