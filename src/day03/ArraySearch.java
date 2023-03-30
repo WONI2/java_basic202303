@@ -1,6 +1,4 @@
-package Day03;
-
-import java.util.Arrays;
+package day03;
 
 //public class ArraySearch {
 //    String[] foods = {"치킨","귤","수박","떡볶이"};
