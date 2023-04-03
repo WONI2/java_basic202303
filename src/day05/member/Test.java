@@ -22,5 +22,30 @@ public class Test {
         mr.showMembers();
 
 
+        //수정테스트
+
+        String targetEmail = "789@asd.com";
+        boolean updateFlag
+           = mr.changePassword(targetEmail, "1111");
+
+        if(updateFlag) {
+            Member updateMember = mr.findByEmail(targetEmail);
+            System.out.println("updateMember =" + updateMember.password);
+        }else {
+            System.out.println("이메일이 잘못됨");
+        }
+
+        System.out.println("==========================");
+        mr.showMembers();
+        mr.removeMember("789@asd.com");
+
+        mr.showMembers();
+
+
+
     }
+
+
+
+
 }

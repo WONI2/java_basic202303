@@ -21,7 +21,7 @@ public class MemberView {
         System.out.println("2. 회원정보 조회하기");
         System.out.println("3. 회원정보 전체조회");
         System.out.println("4. 회원정보 수정하기");
-        System.out.println("5. 회원정보 삭제하기");
+       if(!mr.isEmpty()) System.out.println("5. 회원정보 삭제하기");
         System.out.println("6. 프로그램 종료하기");
         System.out.println("==================");
     }
@@ -42,11 +42,14 @@ public class MemberView {
                     break;
                 case "3" :
                     mr.showMembers();
-
                     break;
                 case "4" :
+                    changePasswordViewProcess();
                     break;
                 case "5" :
+                    if(mr.isEmpty()) continue;
+                    removeMemberViewProcess();
+                    stop();
                     break;
                 case "6" :
                     String answer = input("정말로 종료하시겠습니까? [y/n]");
@@ -68,7 +71,55 @@ public class MemberView {
 
     }
 
- String input(String message) {
+    private void removeMemberViewProcess() {
+
+        //삭제대상 이메일 입력받기
+        String email = input("삭제할 대상 이메일 :");
+        //존재하는지 확인 후 삭제처리 위임
+         //-> 한번 더 y/n으로 삭제여부 묻기
+        Member foundMember = mr.findByEmail(email);
+        if(foundMember != null) {
+            String answer = input("정말로 삭제하시겠습니까? [y/n]"); //input(String.format()) 으로 작성.
+                if(answer.toLowerCase().charAt(0) == 'y') {
+                    mr.removeMember(email);
+                    System.out.println("회원을 삭제하였습니다");
+                }else {
+                    System.out.println("회원삭제를 종료합니다.");
+                    return;
+                }
+        }else{
+            System.out.println("조회결과가 없습니다.");
+        }
+
+    }
+
+    //비밀번호 변경 입출력 처리
+    void changePasswordViewProcess() {
+
+
+        String email = input("수정할 대상의 이메일 : ");
+        Member founMember = mr.findByEmail(email);
+
+        if(founMember != null) {
+            //수정진행
+            System.out.printf("%s 님의 비밀번호를 변경합니다", founMember.memberName);
+            //기존 비밀번호와 같으면 변경 취소
+            String newPassword = input("\n새로운 비밀번호");
+            if(founMember.password.equals(newPassword)) {
+                System.out.println("기존 비밀번호와 같습니다");
+                return;
+            }
+            mr.changePassword(email, newPassword);
+            System.out.println("비밀번호가 성공적으로 변경되었습니다");
+        }else {
+            System.out.println("조회결과가 없습니다");
+        }
+
+
+
+    }
+
+    String input(String message) {
         System.out.print(message);
         return sc.nextLine();
     }

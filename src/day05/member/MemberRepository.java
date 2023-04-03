@@ -4,6 +4,8 @@ package day05.member;
 
 //회원저장소역할
 public class MemberRepository {
+
+    public static final int NOT_FOUND = -1;
     Member[] memberList;
     Member member;
 
@@ -60,7 +62,7 @@ public class MemberRepository {
 
 //마지막 회원의 번호를 알려주는 기능
     int getLastMemberId() {
-        return memberList[memberList.length-1].memberId;
+        return !isEmpty()? memberList[memberList.length-1].memberId : 0;
     }
 
 
@@ -78,4 +80,68 @@ public class MemberRepository {
         }
         return null;
     }
+
+    /*
+    * 이메일을 통해 저장된 회원의 인덱스값을 알아내는 메서드
+    * @param email : 탐색 대상의 이메일
+    * @return : 찾아낸 인덱스, 못찾으면 -1
+    *
+    * */
+
+
+    int findIndexByEmail(String email) {
+        for (int i = 0; i < memberList.length; i++) {
+                if(memberList[i].email.equals(email))
+                    return i;
+        }
+        return NOT_FOUND;
+    }
+
+
+
+    /*비밀번호 수정하는 기능
+    *@param email : 수정대상의 이메일
+    *@paeam newPassword : 변경할 새로운 비밀번호
+    */
+
+    boolean changePassword(String email, String newPassword) {
+
+        //인덱스 탐색
+        int index = findIndexByEmail(email);
+        //수정진행
+        if(index == NOT_FOUND) return false;
+        memberList[index].password = newPassword;
+        return true;
+
+
+    }
+
+    void removeMember(String email) {
+        //인덱스 찾기
+         int index = findIndexByEmail(email);
+
+        //앞으로 가져오기
+        for (int i = index; i < memberList.length-1; i++) {
+            memberList[i] = memberList[i+1];
+        }
+        //배열 마지막칸 없애기
+         Member[] temp = new Member[memberList.length-1];
+        for (int i = 0; i < temp.length; i++) {
+            temp[i] = memberList[i];
+        }
+        memberList = temp;
+        temp = null;
+    }
+
+
+    boolean isEmpty() {
+        return memberList.length == 0; ///java에서 0이 false인가?
+    }
+
+
+
+
+
+
+
 }

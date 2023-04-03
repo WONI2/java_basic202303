@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5377ad39-2ce2-47f8-945f-98677cd7bac8" name="Changes" comment="java 배열">
+    <list default="true" id="5377ad39-2ce2-47f8-945f-98677cd7bac8" name="Changes" comment="java 객체지향, this">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Day03/ArrayDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day03/ArrayDelete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Day03/ArrayInsert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day03/ArrayInsert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Day03/ArraySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day03/ArraySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Day03/ArraySearchQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day03/ArraySearchQuiz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Day03/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day03/Matrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Day03/MethodBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day03/MethodBasic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Day03/MethodQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day03/MethodQuiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day05/member/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/member/MemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day05/member/MemberView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/member/MemberView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day05/member/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/member/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +18,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -40,7 +37,6 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
@@ -50,33 +46,12 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
 }</component>
-  <component name="RunManager" selected="애플리케이션.Main">
-    <configuration name="DancerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day04.DancerMain" />
-      <module name="java_basic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day04.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FieldMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day04.FieldMain" />
-      <module name="java_basic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day04.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="day05.member" />
+    </key>
+  </component>
+  <component name="RunManager" selected="애플리케이션.day05.member.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="day04.array.Main" />
       <module name="java_basic" />
@@ -103,12 +78,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringCompare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day04.StringCompare" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day05.member.Test" />
       <module name="java_basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day04.*" />
+          <option name="PATTERN" value="day05.member.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="day05.member.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day05.member.Main" />
+      <module name="java_basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day05.member.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day05.player.main" />
+      <module name="java_basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day05.player.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.day05.member.Main" />
+        <item itemvalue="애플리케이션.Test" />
+        <item itemvalue="애플리케이션.main" />
         <item itemvalue="애플리케이션.Main" />
         <item itemvalue="애플리케이션.PackagePractice" />
-        <item itemvalue="애플리케이션.StringCompare" />
-        <item itemvalue="애플리케이션.FieldMain" />
-        <item itemvalue="애플리케이션.DancerMain" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +171,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680066233895</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="java 패키지, 스트링배열리스트">
+      <created>1680147704065</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680147704065</updated>
+    </task>
+    <task id="LOCAL-00007" summary="java 객체지향, this">
+      <created>1680252929175</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680252929175</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,7 +204,9 @@
     <MESSAGE value="java 기본구조" />
     <MESSAGE value="java 배열기초" />
     <MESSAGE value="java 배열" />
-    <option name="LAST_COMMIT_MESSAGE" value="java 배열" />
+    <MESSAGE value="java 패키지, 스트링배열리스트" />
+    <MESSAGE value="java 객체지향, this" />
+    <option name="LAST_COMMIT_MESSAGE" value="java 객체지향, this" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
