@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5377ad39-2ce2-47f8-945f-98677cd7bac8" name="Changes" comment="java 객체지향, this">
+    <list default="true" id="5377ad39-2ce2-47f8-945f-98677cd7bac8" name="Changes" comment="java 접근제한자, 캡슐화">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day05/member/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/member/MemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day05/member/MemberView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/member/MemberView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day05/member/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/member/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,13 +48,13 @@
       <recent name="day05.member" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.day05.member.Main">
+  <component name="RunManager" selected="애플리케이션.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day04.array.Main" />
+      <option name="MAIN_CLASS_NAME" value="day07.inherit.Main" />
       <module name="java_basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day04.array.*" />
+          <option name="PATTERN" value="day07.inherit.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -65,12 +62,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PackagePractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day04.PackagePractice" />
+    <configuration name="Matrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day03.Matrix" />
       <module name="java_basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day04.*" />
+          <option name="PATTERN" value="day03.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +101,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day05.player.main" />
+    <configuration name="day06.encap.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day06.encap.Main" />
       <module name="java_basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day05.player.*" />
+          <option name="PATTERN" value="day06.encap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.Main" />
+        <item itemvalue="애플리케이션.Matrix" />
+        <item itemvalue="애플리케이션.day06.encap.Main" />
         <item itemvalue="애플리케이션.day05.member.Main" />
         <item itemvalue="애플리케이션.Test" />
-        <item itemvalue="애플리케이션.main" />
-        <item itemvalue="애플리케이션.Main" />
-        <item itemvalue="애플리케이션.PackagePractice" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +182,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680252929175</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="java member 추가수정삭제">
+      <created>1680503697357</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680503697357</updated>
+    </task>
+    <task id="LOCAL-00009" summary="java 접근제한자, 캡슐화">
+      <created>1680519848868</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1680519848868</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -206,18 +217,9 @@
     <MESSAGE value="java 배열" />
     <MESSAGE value="java 패키지, 스트링배열리스트" />
     <MESSAGE value="java 객체지향, this" />
-    <option name="LAST_COMMIT_MESSAGE" value="java 객체지향, this" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/day02/ArrayPush.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="java member 추가수정삭제" />
+    <MESSAGE value="java 접근제한자, 캡슐화" />
+    <option name="LAST_COMMIT_MESSAGE" value="java 접근제한자, 캡슐화" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
