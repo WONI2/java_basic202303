@@ -23,7 +23,7 @@ public class Main {
         tire.roll();
 
 
-        new Child()
+        new Child();
 
     }
 }
