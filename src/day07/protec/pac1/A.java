@@ -9,15 +9,8 @@ public class A {
 
     void m2() {}
 
-    public A() {
+    public A() {}
 
-    }
-
-    protected A(int a) {
-
-    }
-
-    A(String s) {
-
-    }
+    protected A(int a) {}
+    A(String s) {}
 }
