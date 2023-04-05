@@ -7,7 +7,7 @@ import static day05.member.Gender.*;
 //역할: 회원관리 앱의 입출력 담당
 public class MemberView {
 
-    Scanner sc;
+    public static Scanner sc;
     MemberRepository mr; // MemberRepository로 정보를 가져오기 위해 필드를 가지고 있는 것. 생성자에서 초기화 해줄 것
 
     public MemberView() {
@@ -121,7 +121,7 @@ public class MemberView {
 
     }
 
-    String input(String message) {
+    public static String input(String message) {
         System.out.print(message);
         return sc.nextLine();
     }

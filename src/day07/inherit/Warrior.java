@@ -16,8 +16,10 @@ public class Warrior extends Player {
         this.rage = 20;
     }
 
-    public void powerSlash() {
-        System.out.println("파워슬래시를 시전합니다");
+    public void powerSlash(Player...targets) {
+        System.out.println(this.nickName+"님이 파워슬래시를 시전합니다");
+        Attack(targets);
+
     }
 
     //오버라이딩 : 부모의 시그니처(리턴타입, 이름, 파라미터)를 똑같이 사용.

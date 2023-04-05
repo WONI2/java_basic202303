@@ -11,19 +11,26 @@ public class Main {
         Hunter h = new Hunter("욕설왕퍼킹");
 
 
-        w.showStatus();
-        m.showStatus();
-        h.showStatus();
+//        w.showStatus();
+//        m.showStatus();
+//        h.showStatus();
 
+        Player[] players = {
+                w,m,h,
+                new Warrior("요리왕쿠킹")
+        };
 
-        SnowTire snowTire = new SnowTire();
-        Tire tire = snowTire;
+        m.thunderBolt(m,w,h,new Warrior("요리왕쿠킹"));
+        w.powerSlash(m,w,h,new Warrior("요리왕쿠킹"));
 
-        snowTire.roll();
-        tire.roll();
-
-
-        new Child();
-
+//        SnowTire snowTire = new SnowTire();
+//        Tire tire = snowTire;
+//
+//        snowTire.roll();
+//        tire.roll();
+//
+//
+//        new Child();
+//
     }
 }

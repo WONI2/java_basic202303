@@ -22,7 +22,7 @@ public class Lotto {
 // 선생님 답안
 //package day07.lotto;
 //
-//        import java.util.Arrays;
+//import java.util.Arrays;
 //
 //public class Lotto {
 //
