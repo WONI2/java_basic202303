@@ -1,8 +1,9 @@
-package day09.song;
+package day10.collection.song;
 
-import day07.Util.Utility;
+import java.util.Set;
 
-import static day07.Util.Utility.*;
+import static day07.Util.Utility.input;
+import static day07.Util.Utility.makeLine;
 
 public class ArtistView {
     private final static ArtistRepository ar;
@@ -72,9 +73,11 @@ public class ArtistView {
         if(ar.isRegistered(artistName)) {
             //등록된 경우
             makeLine();
-            String[] songList = ar.getSongList(artistName);
-            for (int i = 0; i < songList.length; i++) {
-                System.out.printf("%d . %s\n",i+1, songList[i] );
+            Set<String> songList = ar.getSongList(artistName);
+            int i = 0;
+            for (String song : songList) {
+                System.out.printf("%d . %s\n",i+1,song );
+                i++;
             }
         }else {
             System.out.println("해당가수는 등록되지 않았습니다.");
