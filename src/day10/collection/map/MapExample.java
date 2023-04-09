@@ -6,10 +6,10 @@ import java.util.Map;
 public class MapExample {
     public static void main(String[] args) {
 
-        Map<String, Object> map = new HashMap<>();// object로 되어서 value의 종류를 여러가지를 선택할 수 있음
+        Map<String, Object> map = new HashMap<>();
+        // object로 되어서 value의 종류를 여러가지를 선택할 수 있음
 
         //put(K, V) :데이터 추가
-
         map.put("잔액", 5000);
         map.put("커피", "아메리카노");
 
@@ -19,7 +19,8 @@ public class MapExample {
         System.out.println(map); //{커피=아메리카노, 잔액=5000}
 
         //get(key) : 데이터참조
-        Object balance = map.get("잔액"); //value 가 object로 되어 있기때문에 downcasting을 염두에 둘 것
+        Object balance = map.get("잔액");
+        //value 가 object로 되어 있기때문에 downcasting을 염두에 둘 것
 
         System.out.println("balance = " + balance);
 

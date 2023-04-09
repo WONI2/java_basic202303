@@ -88,6 +88,8 @@ public class ListExample {
         //오름차정렬
         Collections.sort(numbers);
         System.out.println("오름차정렬 numbers = " + numbers);
+
+
         //내림차정렬.
         numbers.sort(Comparator.reverseOrder());
         System.out.println("내림차정렬 numbers = " + numbers);
