@@ -48,7 +48,7 @@ public class ArtistView {
     private static void insertProcess() {
         System.out.println("\n노래등록을 시작합니다");
         String artistName = input("가수명 : ");
-        String songName = input("노래명");
+        String songName = input("노래명 : ");
 
         //신규가수인가?
         if(!ar.isRegistered(artistName)){
@@ -68,7 +68,7 @@ public class ArtistView {
 
     private static void searchProcess() {
         System.out.println("검색할 가수명을 입력하세요");
-        String artistName = input("가수명 ");
+        String artistName = input("가수명 :");
 
         if(ar.isRegistered(artistName)) {
             //등록된 경우

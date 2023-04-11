@@ -1,12 +1,14 @@
 package day05.member;
 
 public class Member {
-    String memberName;
-    String email;
-    String password;
-    int memberId;
-    Gender gender;
-    int age;
+    public String memberName;
+    public String email;
+    public String password;
+    public int memberId;
+    public Gender gender;
+    public int age;
+
+
 
     public Member(String memberName,String email, String password, int memberId, Gender gender, int age) {
        this.memberName = memberName;

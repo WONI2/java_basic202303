@@ -1,6 +1,8 @@
 package day05.member;
 
 
+import java.io.FileWriter;
+import java.io.IOException;
 
 //회원저장소역할
 public class MemberRepository {
@@ -42,7 +44,21 @@ public class MemberRepository {
         }
             temp[temp.length-1] = newMember;
             memberList = temp;
+        //save 파일 생성
+        try(FileWriter fw = new FileWriter("D:/exercise/member.txt")) {
+            String saveInfo = "" ;
+            saveInfo += newMember.memberId;
+            saveInfo += ", "+newMember.memberName;
+            saveInfo += ", "+newMember.password;
+            saveInfo += ", "+newMember.email;
+            saveInfo += ", "+newMember.age;
 
+//            fw.append(saveInfo + "\n"); //정보가 계속 추가되도록 만들어주는 것 찾아보기!
+
+
+        }catch(IOException e){
+            System.out.println("파일저장실패!");
+        }
         return true;
     }
 

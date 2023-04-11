@@ -2,6 +2,7 @@ package day10.collection.song;
 
 import day04.array.StringList;
 
+import java.io.*;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -23,6 +24,9 @@ public class ArtistRepository {
         artist.getSongList().add(songName);
         artistList.put(artist.getName(), artist);
 
+        //세이브 파일에 자동저장.
+        autoSave();
+
 //        artist.setSongList(new StringList());
 //        artist.getSongList().push(songName);
     }
@@ -43,6 +47,7 @@ public class ArtistRepository {
     public boolean addNewSong(String artistName, String songName) {
         Artist artist = findArtistByName(artistName);
         boolean flag = artist.getSongList().add(songName);
+        if(flag) autoSave();
         return flag;
         //****리팩터링해보기!
 
@@ -59,6 +64,46 @@ public class ArtistRepository {
         return artistList.size();
     }
 
+
+    //자동 세이브 기능
+    public void autoSave() {
+
+        File f = new File("D:/MUSIC");
+        if(!f.exists()) f.mkdir();
+
+        try(ObjectOutputStream oos
+                    = new ObjectOutputStream(new FileOutputStream("D:/MUSIC/m.sav"))) {
+            oos.writeObject(artistList);
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
+    //자동 로드 기능
+    public static void loadFile() {
+
+        //save 파일이 존재 한다면 load하는 것
+        File f = new File("D:/MUSIC/m.sav");
+        if(f.exists()) {
+            //로드 할 것
+            try(ObjectInputStream ois =
+                    new ObjectInputStream((new FileInputStream(f)))) {
+
+                artistList = (Map<String, Artist>) ois.readObject();
+
+            } catch (FileNotFoundException e) {
+                throw new RuntimeException(e);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            } catch (ClassNotFoundException e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+    }
 
 }
 
